@@ -92,8 +92,45 @@
       </p>
       <p>
         <label for="cheese">Amount of Cheese:</label>
-        <input type="range" id="cheese" min="1" max="100" step="1" name="cheese_level">
+        <input
+          type="range"
+          id="cheese"
+          min="1"
+          max="100"
+          step="1"
+          name="cheese_level"
+        />
       </p>
+      <p>
+        <label for="requests">Any Special Requests?</label>
+        <br />
+        <textarea
+          name="requests"
+          placeholder="type something here!!"
+          id="requests"
+          rows="10"
+          cols="40"
+        ></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+      <label for="first">Enter First Name</label>
+      <input type="text" name="first" id="first" required />
+      <p>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          minlength="5"
+          maxlength="20"
+          required
+        />
+      </p>
+
       <button>Submit</button>
     </form>
   </body>
